@@ -25,11 +25,11 @@ public class NavigationTests {
 
 
     WebDriver driver1 = BrowserFactory.getDriver("firefox");
-            driver1.get("http://facebook.com");
+    driver1.get("http://facebook.com");
     String actual1 = driver1.getCurrentUrl();
     String expected1 = "http://facebook.com";
 
-            if(actual1.equals(expected1)){
+    if(actual1.equals(expected1)){
         System.out.println("pass");
     }else{
         System.out.println("fail");
